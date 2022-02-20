@@ -1,0 +1,35 @@
+{
+	"name": "coin_log_js",
+	"version": "1.0.0",
+	"description": "Coin Log Project Made By JS",
+	"main": "server.js",
+	"scripts": {
+		"start": "node start",
+		"server": "nodemon server",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bryanlin16899/Coin_Log_JS.git"
+	},
+	"author": "Bryan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bryanlin16899/Coin_Log_JS/issues"
+	},
+	"homepage": "https://github.com/bryanlin16899/Coin_Log_JS#readme",
+	"dependencies": {
+		"colors": "^1.4.0",
+		"concurrently": "^7.0.0",
+		"config": "^3.3.7",
+		"express": "^4.17.3",
+		"express-validator": "^6.14.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.2.2",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
+}
