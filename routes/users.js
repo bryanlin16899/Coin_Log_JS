@@ -7,13 +7,12 @@ const User = require('../models/User')
 
 const router = express.Router()
 
-// @route    POST api/user
+// @route    POST api/v1/users
 // @desc     Register user
 // @access   Public
 router.post(
 	'/',
 	[
-		check('name', 'Please add your name.').not().isEmpty(),
 		check('email', 'Please add a valid email.').isEmail(),
 		check(
 			'password',
@@ -36,7 +35,7 @@ router.post(
 				})
 			}
 
-			user = User.create(req.body)
+			user = await User.create(req.body)
 
 			const payload = {
 				user: {

@@ -21,6 +21,7 @@
 	"homepage": "https://github.com/bryanlin16899/Coin_Log_JS#readme",
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
+		"binance-api-node": "^0.11.31",
 		"colors": "^1.4.0",
 		"concurrently": "^7.0.0",
 		"dotenv": "^16.0.0",
@@ -29,9 +30,14 @@
 		"jsonwebtoken": "^8.5.1",
 		"mongoose": "^6.2.2",
 		"node-binance-api": "^0.13.1",
-		"request": "^2.88.2"
+		"react-icons": "^4.3.1",
+		"react-router-dom": "^6.2.2",
+		"redux-devtools-extension": "^2.13.9",
+		"request": "^2.88.2",
+		"timestamp-to-date": "^1.1.0"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.15"
+		"nodemon": "^2.0.15",
+		"tailwindcss": "^3.0.23"
 	}
 }

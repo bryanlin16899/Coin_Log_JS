@@ -22,7 +22,7 @@ mongoDB()
 // Routes Define
 app.use('/api/v1/users/', users)
 app.use('/api/v1/auth/', authentication)
-app.use('/api/v1/records/', records)
+app.use('/api/v1/binance/', records)
 
 const PORT = process.env.POST || 5000
 

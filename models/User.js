@@ -2,11 +2,6 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
 
 const UserSchema = new mongoose.Schema({
-	name: {
-		type: String,
-		maxlength: 20,
-		required: [true, 'Please add a name'],
-	},
 	email: {
 		type: String,
 		required: [true, 'Please add a email'],
@@ -27,6 +22,9 @@ const UserSchema = new mongoose.Schema({
 	},
 	api_secret: {
 		type: String,
+	},
+	balance: {
+		type: [],
 	},
 	createdAt: {
 		type: Date,
